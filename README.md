@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Michael Zhang's Travel Planning Agent
 
 **An AI-powered travel planning assistant that creates comprehensive multi-city itineraries with weather forecasts, clothing recommendations, and air quality monitoring.**
@@ -340,128 +339,9 @@ def run_agent_with_tools(llm_with_tools, tool_map, messages, max_iterations=15):
     return messages
 ```
 
-This is **still using LangChain's functions** (`bind_tools`, `invoke`, `ToolMessage`) - just manually orchestrated.
-
-### Compliance with Requirements
-
-| Requirement | Implementation | Line |
-|------------|----------------|------|
-| LangChain v1.2+ | Uses 1.2.7 | - |
-| Built-in functions | `llm.bind_tools()` | ~210 |
-| Use `requests` | All 3 tools use `requests.get/post` | ~60, 95, 150 |
-| Package management | Compatible with pyproject.toml | - |
-| Robust/general | Works for any cities | Entire code |
-| Hard mode | Places API finds addresses | ~60 |
-
----
-
-## 💡 Demo Tips
-
-### Before Demo
-
-1. Update dates to today + next few days
-2. Test with 2-3 different city combinations
-3. Practice follow-up questions
-
-### During Demo
-
-**Opening**: "I built a travel planning agent using LangChain 1.2.7 that integrates three Google Maps APIs..."
-
-**Show**:
-1. Initial plan generation (watch tool calls with 🔧)
-2. Interactive follow-up questions (demonstrates memory)
-3. Different cities (shows robustness)
-
-**Emphasize**:
-- ✅ Uses LangChain's `bind_tools()` (built-in function)
-- ✅ All API calls via `requests` package
-- ✅ Works for any cities (not hardcoded)
-- ✅ LangChain 1.2.7 (security patched)
-
-### Common Questions
-
-**Q**: "Which LangChain function do you use?"  
-**A**: "`llm.bind_tools()` - LangChain's built-in function for tool binding in version 1.2.7"
-
-**Q**: "Why manual tool loop?"  
-**A**: "LangChain 1.2.7 requires manual orchestration of tool calls, but uses built-in functions (`bind_tools`, `invoke`, `ToolMessage`)"
-
-**Q**: "Can it handle any cities?"  
-**A**: "Yes! Fully dynamic. I can demonstrate with different cities right now."
-
----
-
-## 🌟 Future Enhancements
-
-- [ ] Add Streamlit/Gradio UI
-- [ ] Export travel plans to PDF
-- [ ] Restaurant recommendations
-- [ ] Hotel/flight booking integration
-- [ ] Multi-day detailed itineraries
-- [ ] Budget tracking
-- [ ] Real-time traffic updates
-
----
-
-## 📚 API Documentation
-
-- [LangChain 1.2 Docs](https://python.langchain.com/docs/introduction/)
-- [Google Places API](https://developers.google.com/maps/documentation/places/web-service/text-search)
-- [Google Weather API](https://developers.google.com/maps/documentation/weather)
-- [Google Air Quality API](https://developers.google.com/maps/documentation/air-quality)
-- [OpenAI API](https://platform.openai.com/docs/api-reference)
-
----
-
-## 🎉 Success Metrics
-
-- ✅ Works with LangChain 1.2.7
-- ✅ Calls all 3 tools automatically
-- ✅ Generates complete travel plans
-- ✅ Maintains conversation memory
-- ✅ Handles any cities dynamically
-- ✅ Provides accurate recommendations
-- ✅ Complies with all assignment requirements
-
----
-
-## 📞 Support
-
-If you encounter issues:
-
-1. Check `.env` file has correct API keys
-2. Verify dates are within next 4 days
-3. Confirm all 3 Google APIs are enabled
-4. Check billing is linked to Google Cloud project
-5. Run `diagnose_imports.py` to check installation
-
----
-
 ## 📄 License
 
 This project was created for educational purposes as part of the Foundation of Professional Analytics - Agentic AI course.
 
----
 
-## 🙏 Acknowledgments
 
-- LangChain team for the excellent framework
-- Google Maps Platform for comprehensive APIs
-- OpenAI for GPT-4o-mini
-- Professor [Name] for the challenging assignment!
-
----
-
-**Built with ❤️ for Michael Zhang's retirement travels! 🌎✈️**
-
----
-
-## Version History
-
-- **v1.0** (Jan 2026): Initial release with LangChain 1.2.7 support
-- Compatible with updated assignment requirements
-- Manual tool-calling loop for 1.2.7 architecture
-=======
-# LangChain-Travel-Agent
-An autonomous agentic AI travel planner built with LangChain, GPT‑4o‑mini, and Google Maps APIs. Plans multi‑city trips, predicts weather, checks air quality, and manages context-aware conversations.
->>>>>>> d15ec2b3d90994507b4249c131789491a6f6b118
